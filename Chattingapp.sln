@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chattingapp", "Chattingapp.csproj", "{388B0464-92E2-4641-BB51-6F8CCFF33322}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chatting", "..\Chatting\Chatting.csproj", "{DBDD4218-0219-4D52-811B-4CA9B75630CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{388B0464-92E2-4641-BB51-6F8CCFF33322}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{388B0464-92E2-4641-BB51-6F8CCFF33322}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{388B0464-92E2-4641-BB51-6F8CCFF33322}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBDD4218-0219-4D52-811B-4CA9B75630CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBDD4218-0219-4D52-811B-4CA9B75630CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBDD4218-0219-4D52-811B-4CA9B75630CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBDD4218-0219-4D52-811B-4CA9B75630CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

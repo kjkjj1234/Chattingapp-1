@@ -1,15 +1,28 @@
-﻿using System;
+﻿using Chattingapp;
+using System;
+
 using System.Collections.Generic;
+
 using System.Net;
+
 using System.Net.Sockets;
+
 using System.Text;
+
 using System.Threading;
+
 using System.Windows.Forms;
 
+
+
 namespace Chattingapp
+
 {
+
     public partial class Form1 : Form
+
     {
+
         TcpListener server = null; // 서버
 
         TcpClient clientSocket = null; // 소켓
@@ -23,9 +36,13 @@ namespace Chattingapp
         public Dictionary<TcpClient, string> clientList = new Dictionary<TcpClient, string>();
 
 
+
         public Form1()
+
         {
+
             InitializeComponent();
+
             // 쓰레드 생성
 
             Thread t = new Thread(InitSocket);
@@ -33,7 +50,10 @@ namespace Chattingapp
             t.IsBackground = true;
 
             t.Start();
+
         }
+
+
 
         private void InitSocket()
 
