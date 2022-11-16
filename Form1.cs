@@ -87,12 +87,16 @@ namespace Chattingapp
 
                     NetworkStream stream = clientSocket.GetStream();
 
+                    // 1024 바이트의 크기를 갖는 바이트 배열을 가진 buffer 클래스를 생성한다.
                     byte[] buffer = new byte[1024]; // 버퍼
 
                     int bytes = stream.Read(buffer, 0, buffer.Length);
 
+                    // user_name 부분에 로그인 정보에서 닉네임만 연결해주면 될 것 같아요.
                     string user_name = Encoding.Unicode.GetString(buffer, 0, bytes);
 
+                    // user_name의 0번째부터 user_name의 $부분까지 잘라서 user_name에 대입한다.
+                    // .Substring() = 문자열 자르기, .IndexOf() = 문자열 위치 찾기
                     user_name = user_name.Substring(0, user_name.IndexOf("$")); // client 사용자 명
 
 
